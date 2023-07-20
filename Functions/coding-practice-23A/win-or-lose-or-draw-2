@@ -1,0 +1,45 @@
+
+def compare(team_a_points, team_b_points):
+    if team_a_points > team_b_points:
+        return "Win"
+    elif team_a_points == team_b_points:
+        return "Draw"
+    elif team_a_points < team_b_points:
+        return "Lose"
+
+team_a_points = int(input())
+team_b_points = int(input())
+
+compare_result = compare(team_a_points , team_b_points)
+
+print(compare_result)
+
+
+# def compare(team_a_points, team_b_points):: This line defines the function compare that takes two integer parameters team_a_points and team_b_points.
+
+# if team_a_points > team_b_points:: Inside the function, it checks if team_a_points is greater than team_b_points.
+
+# return "Win": If team_a_points is greater, the function returns the string "Win".
+
+# elif team_a_points == team_b_points:: If team_a_points is not greater than team_b_points, it checks if both points are equal using the elif (else if) statement.
+
+# return "Draw": If both points are equal, the function returns the string "Draw".
+
+# elif team_a_points < team_b_points:: If team_a_points is neither greater nor equal to team_b_points, it assumes that team_a_points is less than team_b_points using another elif statement.
+
+# return "Lose": If team_a_points is less than team_b_points, the function returns the string "Lose".
+
+# team_a_points = int(input()) and team_b_points = int(input()): These lines prompt the user to input the points for two teams and store them in variables team_a_points and team_b_points, respectively.
+
+# compare_result = compare(team_a_points, team_b_points): This line calls the compare function with the input points as arguments and stores the resulting comparison result in the variable compare_result.
+
+# print(compare_result): Finally, the code prints the comparison result, which can be "Win", "Draw", or "Lose" based on the points of the two teams.
+
+# For example, if the user inputs 3 for team_a_points and 2 for team_b_points, the code will print Win, indicating that team_a_points (3) is greater than team_b_points (2).
+
+#input
+# 10
+# 6
+
+#output
+# Win
